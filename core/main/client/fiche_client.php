@@ -12,6 +12,7 @@ $row_query_inter_cour = mysql_query("SELECT count(idclient) as somme FROM interv
 	WHERE idintervention IN 
         (SELECT idintervention from intervention where idclient = ".$idclient.")
     AND etat_intervention IN (1,2,3,5,6);");
+	/* To test : IN just for etat_intervention */
 $row_result_inter_cour = mysql_fetch_assoc($row_query_inter_cour);
 
 $row_query_total_inter = mysql_query("SELECT count(idclient) as somme FROM intervention
