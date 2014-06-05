@@ -10,7 +10,7 @@ $port = "3306";
 mysql_connect($host, $user, $pass);
 mysql_select_db($base);
 
-$rootsite = "http://localhost/inter/";
+$rootsite = "http://localhost/GCIO/";
 
 
 //versionning
